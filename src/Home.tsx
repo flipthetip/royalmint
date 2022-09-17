@@ -127,7 +127,8 @@ const MintButtonContainer = styled.div`
 
 const SolExplorerLink = styled.a`
   color: var(--title-text-color);
-  border-bottom: 1px solid var(--title-text-color);
+  margin-left: 10px;
+  margin-left: 10px;
   font-weight: bold;
   list-style-image: none;
   list-style-position: outside;
@@ -172,7 +173,7 @@ const Price = styled(Chip)`
   margin: 5px;
   font-weight: bold;
   font-size: 1.2em !important;
-  font-family: 'Patrick Hand', cursive !important;
+  font-family: Georgia, 'Times New Roman', Times, serif;
 `;
 
 const Image = styled.img`
@@ -180,6 +181,18 @@ const Image = styled.img`
   width: auto;
   border-radius: 7px;
   box-shadow: 5px 5px 40px 5px rgba(0, 0, 0, 0.5);
+`;
+
+const Image3 = styled.img`
+  height: auto;
+  width: 200px;
+  margin-top: 10px;
+`;
+
+const Image4 = styled.img`
+  height: auto;
+  width: 50px;
+  margin-top: 5px;
 `;
 
 const BorderLinearProgress = styled(LinearProgress)`
@@ -738,9 +751,21 @@ const Home = (props: HomeProps) => {
                               <SolExplorerLink href={solanaExplorerLink} target="_blank">View on
                                 Solscan</SolExplorerLink>}
                         </NFT>
-                        The Royal AI Collection 👑 - 2022
+                        A Royal AI Collection 👑 - 2022<br/>
                     </DesContainer>
                 </MintContainer>
+                <div><Image3
+                src="solwyt2.png"
+                alt="Royal AI"/></div>
+                <div>
+                <SolExplorerLink href="https://www.discord.gg/RmMAYXwKMN" target="_blank"><Image4
+                src="dcb.png"
+                alt="Royal AI"/></SolExplorerLink>    
+                <SolExplorerLink href="https://www.twitter.com/RoyalDex" target="_blank"><Image4
+                src="twtb.png"
+                alt="Royal AI"/></SolExplorerLink>  
+                </div>
+                {/* The Royal AI Collection 👑 - 2022 */}
             </MainContainer>
             
             <Snackbar
